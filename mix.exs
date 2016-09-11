@@ -14,7 +14,7 @@ defmodule LearnEcto.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger, :ecto, :postgrex],
+    [applications: [:logger, :ecto, :postgrex, :comeonin],
      mod: {LearnEcto, []}]
   end
 
@@ -29,6 +29,7 @@ defmodule LearnEcto.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [{:ecto, "~> 1.0"},
-     {:postgrex, ">= 0.0.0"}]
+     {:postgrex, ">= 0.0.0"},
+     {:comeonin, "~> 2.5"}]
   end
 end
